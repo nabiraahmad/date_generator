@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+   font-family: 'Abril Fatface', serif;
+}
+body {
+  margin: 5vw 10vw 0px 10vw;
+  padding: 0px;
+  background-color: #f2f5ea;
+  color: #a6a57a;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+p{
+  font-size: 20px;
+}
+body * {
+  box-sizing: border-box;
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+}
+#executeButton {
+  background-color: #a6a57a; /* Set the background color of the button */
+  color: white; /* Set the text color of the button */
+  padding: 8px 20px; /* Add padding to the button */
+  border: none; /* Remove the button border */
+  border-radius: 10px; /* Add rounded corners to the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 16px; /* Set the font size of the button text */
+}
+
+#executeButton:hover {
+  background-color: #FFC6D5; /* Change the background color on hover */
+}
+input, button {
+  font-size: 1rem;
+}
+.animated_img {
+    width: 160px;
+    height: 160px;
+    animation: vibrate 0.2s infinite, bigandsmall 2s infinite;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(-4px);
+    }
+    50% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(-4px);
+    }
+}
+#outputParagraph {
+    box-sizing: content-box;
+}
+
+@keyframes bigandsmall {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+#title {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: all 2s;}
+
+.specialTitle {
+  text-decoration: underline;
+  color: #000;
+  text-shadow: 0px 0px 13px #ff0072;
+}
+
+#outputText {
+  padding: 1vmin;
+}
+
+.image_text{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output_image{
+  max-width: 20%;
+  height: auto; 
+  display: none;
+}
+
+ .box {
+            width: 500px;
+            height: 50px;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            background-color: #FFC6D5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .hidden-text {
+            display: none;
+        }
+        .output-text {
+            background-color: transparent;
+            padding: 10px;
+        }
+
+.output-images img {
+    width: 150px; /* Set the width of the images */
+    height: 150px; /* Set the height of the images */
+    margin: 10px; /* Add margin around the images for spacing */
+    display: none;
+}
+
+.cash {
+    width: 200px;
+    height: auto;
+    background: url('cash.gif');
+    display: none; /* Initially hidden */
+     z-index: 999;
+}
+
+
+.end{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#myInput {
+  width: 200px; /* Set the width of the input box */
+  padding: 10px; /* Add some padding to the input box */
+  border: 1px solid #ccc; /* Add a border to the input box */
+  border-radius: 5px; /* Add rounded corners to the input box */
+  font-size: 16px; /* Set the font size of the input text */
+  margin-right: 10px; /* Add some space between the input box and the button */
+}
+
