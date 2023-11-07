@@ -142,7 +142,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     executeButton.addEventListener("click", function(){
         const name = inputElement.value;
-        outputText.textContent = name + ", you're not invited for a second date :p";
+        if (name === "christina" || name == "Christina") {
+            outputText.textContent = "FINE " + name + ", you're invited for a second date :)";
+        } 
+        else {
+            outputText.textContent = name + ", you're not invited for a second date :p";
+        }
         toggleCashVisibility(); // Toggle cash image visibility
     });
 
